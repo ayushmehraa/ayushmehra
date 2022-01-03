@@ -1,0 +1,670 @@
+ /* body */
+ 
+    body{
+        font-family: 'Sofia', cursive;
+        color: #7f7a79;
+        
+    }
+
+    /* navbar */
+    #navph{
+        display: none;
+    }
+    #navphbtndiv{
+        display: none;
+    }
+    #navbar{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        flex-wrap: wrap-reverse;
+    }
+    #navbar::before{
+        /* background: url(./images/white-banner-4.jpg)no-repeat center center/cover; */
+        background-color: #f6f6f6;
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    
+
+    .nav{
+        width: 33%;
+        margin: auto;
+        padding: 0px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    /* navbar logo */
+    #navbar .navlogo {
+        text-align: center;
+        font-size: 15px;
+        text-decoration: none;
+        color: #af4328;
+        list-style: none;
+    }
+    #navbar .navlogo a{
+        text-align: center;
+        font-size: 15px;
+        text-decoration: none;
+        color: #af4328;
+        list-style: none;
+    }
+    /* nav list */
+
+    .navli ul{
+        list-style: none;
+        display: flex;
+        padding: 10px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: -2;
+        justify-content: center;
+
+    }
+    .navli ul li a{
+        text-decoration: none;
+        color: #7f7a79;
+
+    }
+    .navli ul li a:hover{
+        color: #f14014;
+    }
+    .navli ul li{
+        padding: 5px ;
+        margin: 2px;
+        text-align: -webkit-center;
+        display: flex;
+
+
+    }
+    /* nav btn */
+    .navbtn button{
+        margin: 10px;
+        height: 35px;
+        width: 200px;
+        border: none;
+        background-color:#af4328 ;
+        border-radius: 8px;
+        color:#f6f6f6;
+        font-weight: bold;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    .navbtn button:hover{
+        transition: 0.5s;
+        border-radius: 20px;
+        background-color:#af4328d8 ;
+        width: 195px;
+        height: 38px;
+        border:none;
+        border-bottom-right-radius:20px ;
+        border-bottom-left-radius:0px ;
+        border-top-right-radius:20px ;
+        border-top-left-radius:20px ;
+    }
+
+
+    /* main */
+
+    #mainbox{
+        margin-top: 20px;
+        background-color: #f6f6f6;
+        width: 100%;
+        height: 400px;
+    }
+
+
+    #mainHeading{
+        /* margin-top: 20px; */
+        padding-top: 65px;
+        width: 365px;
+        margin: auto;
+        text-align: center;
+        font-size: 16px;
+        color: black;
+    }
+    
+    #mainbtn {
+        text-align: center;
+    }
+    #mainbtn button{
+        cursor: pointer;
+        width: 250px;
+        height: 55px;
+        font-size: large;
+        background: #af4328;
+        border: none;
+        color: aliceblue;
+
+        border-radius: 8px;
+        transition-duration: 0.5s;
+    }
+    #mainbtn button:hover{
+        transition: 0.5s;
+        border-radius: 20px;
+        /* background-color:#af4328d8 ; */
+
+        /* width: 240px; */
+        height: 60px;   
+        border:none;
+        border-bottom-right-radius:30px ;
+        border-bottom-left-radius:0px ;
+        border-top-right-radius:30px ;
+        border-top-left-radius:30px ;
+    }
+
+    /* iconbox */
+    #iconbox {
+        background-color: #f6f6f6;
+    }
+
+    .iconssubbox {
+    display: flex;
+    /* margin-top: 35px; */
+    padding-top: 60px;
+
+    }
+    
+    #iconbox .iconssubbox .icon{
+    align-items: center;
+    width: 168px;
+    margin: auto;
+    padding-bottom: 40px;
+    text-align: center;
+    }
+
+
+
+
+    /* client section */
+
+    #clientbox{
+        width: 100%;
+        text-align: center;
+        display: block;
+        flex-wrap: wrap;
+        position: relative;
+        padding-top: 150px;
+    }
+    #clientbox  hr{
+        width: 70px;
+        background-color: #af4328;
+        height: 4px;
+        border: none;
+        border-radius: 10px;
+    }
+    #clientbox #cheading {
+        /* width: 450px; */
+        margin: auto;
+        /* border-radius: 20px;
+        border: 0px;
+        border-bottom: 2px solid #af4328;
+        border-style: dashed; */
+        padding: 10px;
+        color: black;
+    }
+    #clientbox::before{
+        background: url(./images/clients.jpg)no-repeat center center/cover;
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .clientsubbox{
+
+        width:100%;
+        padding-top: 40px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        flex-flow: row-reverse wrap;
+        
+    }
+    .clientsubbox .Cbox{
+        width: 33%;
+        margin-bottom: 15px;
+        text-align: center;        
+        transition: all;
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+    .clientsubbox .Cbox img {
+        width: 80%;
+        transition: all;
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+    .clientsubbox .Cbox :hover {
+        transition: ease-in-out;
+        transition-duration: 0.5s;
+        /* transform: translatey(-20px); */
+        transform: translateY(-20px);
+        opacity: 0.9;
+    }
+    .clientsubbox #clientbtn button{
+        margin-top:50px ;
+        width: 150px;
+        height: 36px;
+        background: #af4328;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    /* work section */
+
+
+    #workheading{
+        margin-top: 300px;
+        width: 100%;
+        text-align: center;
+        /* font-size: 25px; */
+        color:black ;
+
+    }
+    #workbox{
+        display: flex;
+        width: 100%;
+
+    }
+    #workbox .Wsubboxes h1{
+        font-family: 'Petemoss', cursive;
+        color:#af4328;
+        font-size:23px ;
+
+    }
+    .Wsubboxes{
+        width: 33%;
+        margin: auto;
+        text-align: center;
+        /* padding: 50px; */
+    }
+    .Wsubboxesp{
+        width: 200px;
+    }
+
+
+    /* package section */
+
+    #package{
+        width: 100%;
+        margin-top:100px;
+    }
+    #pheading{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        color: black;
+        /* font-family: 'Petemoss', cursive; */
+
+    }
+    #pheading hr{
+        width: 50px;
+        height: 4px;
+        background: #af4328;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    #packagebox{
+        width: 100%;
+        display: flex;
+    }
+    .pboxes{
+        width: 24%;
+        margin: auto;
+        text-align: center;
+        background: #f7f6f6;
+        
+        padding: 20px;
+        border-radius: 14px;
+        transition: all;
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+    .pboxes img{
+        width: 90%;
+        margin-bottom: 60px;
+        
+    }
+    .pboxes #pimg1{
+        color: #bb8f2f;
+    }
+    .pboxes #pimg2{
+        color: #a24830;
+        
+    }
+    .pboxes #pimg3{
+        color: #333333;
+
+    }
+    .pboxes:hover {
+        transition: ease-in-out;
+        transition-duration: 0.5s;
+        transform: translatey(-12px);
+        opacity: 0.9;
+
+    }
+
+
+    /* designer section */
+    #Desbox{
+        margin-top: 100px;
+        text-align: center;
+    }
+    #Desbox #desbtn button{
+        cursor: pointer;
+        width: 250px;
+        height: 55px;
+        font-size: large;
+        background: #af4328;
+        border: none;
+        color: aliceblue;
+        border-radius: 8px;
+        transition: all;
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+    #Desbox  #desheading{
+        color: black;
+    }
+    #Desbox #desbtn button:hover{
+        transition: 0.5s;
+        border-radius: 20px;
+        height: 60px;   
+        border:none;
+        border-bottom-right-radius:30px ;
+        border-bottom-left-radius:0px ;
+        border-top-right-radius:30px ;
+        border-top-left-radius:30px ;
+    }
+    
+
+    /* Footer section  */
+    #footbox{
+        margin-top:200px ;
+        width: 100%;
+        text-align: center;
+    }
+    #footbox .fboxes #fheading{
+        color: #af4328;
+    }
+    #footbox .fboxes{
+        width: 250px;
+        margin: auto;
+        padding: 10px;
+    }
+    #footbox .fboxes  #footerfoot{
+        font-family:'Courier New', Courier, monospace ;
+
+    }
+    
+
+    @media (min-width:644px ) and (max-width:800px){
+        #mainbox::before {
+        /* background: url(./images/white-banner-4.jpg)no-repeat center center/cover; */
+        background-color: #f6f6f6;
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 56%;
+        z-index: -1;
+        }
+    }
+
+
+
+   /* resopossive phone */
+    @media (min-width:644px ) and (max-width:800px) {
+        .clientsubbox .Cbox {
+            width: 50%;
+            margin-bottom: 15px;
+            text-align: center;
+            transition: all;
+            transition-duration: 1s;
+            /* position: absolute; */
+            animation: all;
+            transition: 1s;
+            transition: 1;
+            transition: ease-in-out;
+        
+        }
+        
+        
+    }
+    
+
+    @media (min-width:0px ) and (max-width:670px){
+        #navbar{
+            display: none;
+        }
+        #navphbtndiv{
+            text-align: center;
+            width: 100%;
+            /* height: 100px; */
+        }
+        #navphbtndiv::before{
+            /* background: url(./images/white-banner-4.jpg)no-repeat center center/cover; */
+            background-color: #f6f6f6;
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        #navphbtndiv{
+            display: flex;
+            width: 100%;
+        }
+        /* #navph::before {
+            background: url(./images/white-banner-4.jpg)no-repeat center center/cover;
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 225%;
+            z-index: -1;
+        } */
+        
+        #navphbtndiv button{
+            width: 94px;
+            height: 49px;
+            margin-top:25px ;
+            border-radius: 46px;
+            border-bottom-left-radius: 0px;
+            border: none;
+            background-color: #ac543b;
+            color:white ;
+            margin-left: 31px;
+
+            
+        }
+        #navphbtndiv{
+            padding: 0px,5px,0px,15px;
+
+        }
+        .navphdiv{
+            width: 50%;
+        }
+        #navphlogo a{
+            color: #af4328;
+            /* font-size: 30px; */
+            float: right;
+            padding-right: 0px;
+            
+        }
+        #navphli ul {
+            padding-top: 22px;
+            padding-left: 0px;
+            background-color: #f6f6f6;
+            list-style: none;  
+            text-align: center;  
+            margin-bottom:0px ;
+        }
+        #navphli ul li {
+            margin: auto;
+            width: 173px;
+            border: 3px solid #af4328d8;
+            padding-top: 5px;
+            margin-top: 20px;
+            border-radius: 18px;
+            /* border-bottom-left-radius: 0px; */
+        }
+        #navphli ul li:hover{
+            transition: 0.5s;
+            border-radius: 20px;
+            border: 4px solid #af4328d8 ;
+            border-color: #af4328d8;
+            /* background-color:#af4328d8 ; */
+            border-bottom-right-radius:20px ;
+            border-bottom-left-radius:0px ;
+            border-top-right-radius:20px ;
+            border-top-left-radius:20px ;
+            
+            
+        }
+
+        #navphli ul li a{
+            color: #af4328d8;
+            font-size: 23px;
+        }
+
+        #navphli ul li a:hover{
+            color: #ca5e40 ;
+        }
+        #mainbox {
+            margin-top: 0px;
+            background-color: #f6f6f6;
+            width: 100%;
+            height: 400px;
+        }
+    
+
+        /* clientbox */
+        .clientsubbox .Cbox {
+            width: 50%;
+            margin-bottom: 15px;
+            text-align: center;
+            transition: all;
+            transition-duration: 1s;
+            /* position: absolute; */
+            animation: all;
+            transition: 1s;
+            transition: 1;
+            transition: ease-in-out;
+        
+        }
+        
+    }
+
+
+    @media (min-width:0px ) and (max-width:435px){
+        #navphlogo a{
+            color: #af4328;
+           font-size: 11px;
+            float: right;
+            padding-right: 0px;
+            
+        }
+        /* #navphbtndiv::before{
+            background: url(./images/white-banner-4.jpg)no-repeat center center/cover;
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 124%;
+            z-index: -1;
+        } */
+        #mainHeading {
+            font-size: 29px;
+            margin-top: 20px;
+            padding-top: 65px;
+            width: 365px;
+            margin: auto;
+            text-align: center;
+            font-size: 16px;
+            color: black;
+        }
+        .iconssubbox {
+            display: block;
+        }
+        #iconbox .iconssubbox .icon {
+            align-items: center;
+            width: 168px;
+            margin: auto;
+            padding-bottom: 40px;
+            padding-top: 40px;
+            text-align: center;
+        }
+        .clientsubbox .Cbox {
+            width: 100%;
+            margin-bottom: 15px ;
+            text-align: center;
+            transition: all;
+            transition-duration: 1s;
+            /* position: absolute; */
+            animation: all;
+            transition: 1s;
+            transition: 1;
+            transition: ease-in-out;
+            transition-property:all;
+            transition-duration: 2s;
+        }
+        #workbox {
+            display: block;
+            width: 100%;
+        }
+        .Wsubboxes {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+        #packagebox {
+            width: 100%;
+            display: block;
+        }
+        .pboxes {
+            width: 53%;
+            margin: auto;
+            text-align: center;
+            background: #f7f6f6;
+            padding: 20px;
+            border-radius: 14px;
+            margin-bottom: 50px;
+    }
+    }
+
+    @media (min-width:0px ) and (max-width:385px){
+        #mainHeading {
+            margin-top: 20px;
+            padding-top: 65px;
+            width: 286px;
+            margin: auto;
+            text-align: center;
+            font-size: 16px;
+            color: black;
+        }
+    }
+    
